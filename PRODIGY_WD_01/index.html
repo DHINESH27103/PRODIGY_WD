@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+ }
+ 
+ #navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: background-color 0.3s;
+ }
+ 
+ #navbar a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color 0.3s;
+ }
+ 
+ #navbar a:hover {
+  color: #ddd;
+ }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+font-size: medium;
+font-weight: bold;
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* height: auto; */
+  
+}
+
+h1, h2 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #c5c5c5;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}</style>
+<body>
+
+<nav id="navbar">
+ <a href="#home">Home</a>
+ <a href="#projects">Projects</a>
+ <a href="#about">About</a>
+ <a href="#contact">Contact</a>
+</nav>
+<main>
+  <section id="hero">
+      <h1>Welcome to my Landing Page Website</h1>
+      <p>I am a web developer with a passion for creating clean and functional websites.</p>
+      <button>Learn More</button>
+  </section>
+  <section id="projects">
+      <h2>My Projects</h2>
+      <p>
+          <li><a href="#">Project 1</a></li>
+          <li><a href="#">Project 2</a></li>
+          <li><a href="#">Project 3</a></li>
+      </p>
+  </section>
+  <section id="about">
+      <h2>About Me</h2>
+      <p>I am a web developer with a passion for creating clean and functional websites. I have a degree in Computer Science and have been working in the industry for 5 years.</p>
+      <img src="../contact-form.jpg" alt="Me">
+  </section>
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>You can reach me through email or phone. My contact information is below.</p>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone"><br>
+        <button>Send Message</button>
+    </form>
+</section>
+</main>
+<footer>
+  <p>&copy; 2023 Dhinesh Landing Page Website</p>
+</footer>
+<script>
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 50) {
+     document.getElementById("navbar").style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  } else {
+     document.getElementById("navbar").style.backgroundColor = "#5c75f5";
+  }
+ };
+ </script>
+</body>
+</html>
